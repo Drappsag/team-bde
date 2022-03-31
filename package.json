@@ -1,0 +1,18 @@
+{
+  "dependencies": {
+    "@discordjs/opus": "^0.7.0",
+    "@discordjs/rest": "^0.3.0",
+    "canvas": "^2.9.0",
+    "discord-anti-spam": "^2.7.3",
+    "discord-api-types": "^0.30.0",
+    "discord-music-player": "^8.3.1",
+    "discord-streaming": "^3.0.1",
+    "discord-temp-channels": "^3.0.2",
+    "discord.js": "^13.6.0",
+    "fs": "^0.0.1-security",
+    "node-twitch": "^0.4.5"
+  },
+  "engines": {
+    "node": "16.6"
+  }
+}

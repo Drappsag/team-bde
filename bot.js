@@ -408,7 +408,7 @@ client.on("messageCreate", message => {
                 .setDescription("")
                 .addFields(
                     { name: "**__Staff BDE :__**", value: "**Community Manager :** \n**Team Manager :** ", inline: false },
-                    { name: "**__Joueurs BDE :__**", value: "-\n-\n-\n-\n-", inline: false },
+                    { name: "**__Joueurs BDE :__**", value: "-<@702859621584339004> TFT\n-\n-\n-\n-", inline: false },
                 )
                 .setThumbnail("https://i.imgur.com/fnMwjlG.png")
                 //.setFooter({ text: "👑 = Capitaine" })

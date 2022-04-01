@@ -310,7 +310,12 @@ client.on("messageCreate", message => {
                     .setLabel("Discord")
                     .setEmoji('959214660681338930')
                     .setStyle("LINK")
-                    .setURL("https://discord.gg/R5uTB9bF"));
+                    .setURL("https://discord.gg/R5uTB9bF"))
+		.addComponents(new Discord.MessageButton()
+                    .setLabel("mail")
+                    .setEmoji('✉')
+                    .setStyle("LINK")
+                    .setURL("mailto:teambde.contact@gmail.com"));
 
             message.channel.send({ content: "https://i.ibb.co/hD5g9D0/Discord-Reseaux.png", components: [row]});
             message.channel.send({ content: "ㅤ", components: [row2]});

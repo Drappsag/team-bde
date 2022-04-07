@@ -84,12 +84,12 @@ const embed = new SlashCommandBuilder()
         .setName("image")
         .setDescription("Liens de l'image à afficher en TRES grand (Attention c vrmt grand)")
         .setRequired(false)
-        .addChoice("logo serv", "https://i.imgur.com/fnMwjlG.png"))
+        .addChoice("logo serv", "https://i.imgur.com/9kd0cCd.png"))
     .addStringOption(option => option
         .setName("thumbnail")
         .setDescription("Liens de l'image en petit à droite")
         .setRequired(false)
-        .addChoice("logo serv", "https://i.imgur.com/fnMwjlG.png"));
+        .addChoice("logo serv", "https://i.imgur.com/9kd0cCd.png"));
 
 //COMMAND WARN
 const cmdwarn = new SlashCommandBuilder()
@@ -323,7 +323,7 @@ client.on("messageCreate", message => {
                 .setColor("#5E9FFF")
                 .setTitle("Aide Modération")
                 .setDescription("Voici toutes les commandes de modérations, il suffit de tapper : **/** puis le nom de la commande ! Il suffit de lire, tout est décrit !")
-                .setThumbnail("https://i.imgur.com/fnMwjlG.png")
+                .setThumbnail("https://i.imgur.com/9kd0cCd.png")
                 .addFields(
                     { name: "Avertir :", value: "/warn", inline: false},
                     { name: "Voir les avertissements :", value: "/checkwarn", inline: false},
@@ -346,7 +346,7 @@ client.on("messageCreate", message => {
                 .setColor("#FFFFFF")
                 .setTitle("Bienvenue dans la sélection de rôles")
                 .setDescription("Afin de vous proposer un serveur Discord le plus clair possible, l'accès à certaines sections est restreint.\nMais pas de panique ! Pour y accéder, vous n\'avez qu\'à appuyer sur les boutons qui vous intéressent.\nMerci !")
-                .setThumbnail("https://i.imgur.com/fnMwjlG.png")
+                .setThumbnail("https://i.imgur.com/9kd0cCd.png")
             let embedjeux2 = new Discord.MessageEmbed()
                 .setColor("#FFFFFF")
                 .setTitle("JEUX :")
@@ -390,7 +390,7 @@ client.on("messageCreate", message => {
                 .setColor("#cca800")
                 .setTitle("Team BDE")
                 .setDescription("La Team BDE est une équipe E-Sport TFT dans laquelle vous pourrez participer à de nombreux tournois sous les couleurs de celle-ci.\n\nDonc si vous êtes un joueur TFT, vous pouvez dès maintenant poster votre candidature ci-dessous, en vous présentant personnellement (prénom, âge...) puis en présentant vos qualités in-game, votre Riot ID, les champions que vous jouez et votre rank actuel.\n\nAfin d’offrir la meilleure expérience e-sportive aux joueurs, la Team BDE s’entoure d'encadrants expérimentés dans le domaine.\n\nSensible à la valeur éducative, l'équipe BDE a pour ambition de former LES joueurs de demain, mettant tout en œuvre pour développer leur plein potentiel.")
-                .setThumbnail("https://i.imgur.com/fnMwjlG.png")
+                .setThumbnail("https://i.imgur.com/9kd0cCd.png")
             let row = new Discord.MessageActionRow()
                 .addComponents(new Discord.MessageButton()
                     .setCustomId("candidesport")
@@ -410,7 +410,7 @@ client.on("messageCreate", message => {
                     { name: "**__Staff BDE :__**", value: "**Community Manager :** \n**Team Manager :** ", inline: false },
                     { name: "**__Joueurs BDE :__**", value: "-<@702859621584339004> TFT\n-\n-\n-\n-", inline: false },
                 )
-                .setThumbnail("https://i.imgur.com/fnMwjlG.png")
+                .setThumbnail("https://i.imgur.com/9kd0cCd.png")
                 //.setFooter({ text: "👑 = Capitaine" })
             message.channel.send({ embeds: [embedequipe] });
         }
@@ -575,7 +575,7 @@ client.on("messageCreate", message => {
                 .setColor("#FFFFFF")
                 .setTitle("RÈGLEMENT :")
                 .setDescription("Bienvenue sur le Discord communautaire de la Team BDE\n\nVoici quelques règles à suivre pour s'assurer du bon fonctionnement de ce Discord :")
-                .setThumbnail("https://i.imgur.com/fnMwjlG.png")
+                .setThumbnail("https://i.imgur.com/9kd0cCd.png")
                 .addFields(
                     { name: "➤ 1.", value: "Merci d'être respectueux, gentil et courtois envers chaque utilisateur Discord. Nous vous demandons de ne pas contester les actions du personnel, car elles seront toujours équitables. Si vous contestez les agissements du Staff, plusieurs fois après avoir reçu un avertissement ainsi que des explications de la personne concernée, vous serez banni du serveur Discord.", inline: false},
                     { name: "➤ 2.", value: "Veuillez noter que les utilisateurs de tous âges utilisent ce serveur. Nous voulons que notre communauté soit un environnement sûr pour tous les âges. Nous ne voulons pas de nudité ou autre contenu inapproprié (NSFW).", inline: false},
@@ -600,7 +600,7 @@ client.on("messageCreate", message => {
                 .setColor("#FFFFFF")
                 .setTitle("🎫 **Ouvrir un Ticket**")
                 .setDescription("Vous souhaitez entrer en contact avec le staff de notre serveur ?\nChoisissez le motif de votre demande ci-dessous :\n\n*⚠️ Tout ticket inutile sera* **sanctionné**.")
-                .setThumbnail("https://i.imgur.com/fnMwjlG.png");
+                .setThumbnail("https://i.imgur.com/9kd0cCd.png");
             /*let boutton = new Discord.MessageActionRow()
                 .addComponents(new Discord.MessageButton()
                     .setCustomId("ticket")
@@ -1108,7 +1108,7 @@ client.on("interactionCreate", async interaction => {
                         { name: "Raison :", value: raison, inline: false},
                         { name: "Durée :", value: temps / 60 + " minutes", inline: true},
                     )
-                    .setImage("https://i.imgur.com/fnMwjlG.png")
+                    .setImage("https://i.imgur.com/9kd0cCd.png")
 
                 utilisateur.send({ embeds: [embedmutedm] }).catch(err => {
                     console.log("Erreur dm warn" + err);
@@ -1219,7 +1219,7 @@ client.on("interactionCreate", async interaction => {
                         .addFields(
                             { name: "Raison :", value: raison, inline: false},
                             )
-                        .setImage("https://i.imgur.com/fnMwjlG.png")
+                        .setImage("https://i.imgur.com/9kd0cCd.png")
                     Savewarn()
                 }
                 else {
@@ -1243,7 +1243,7 @@ client.on("interactionCreate", async interaction => {
                             { name: "Raison :", value: raison, inline: false},
                             { name: "Dernier(s) avertissement(s) :", value: warn["warn"][mention.id]},
                             )
-                        .setImage("https://i.imgur.com/fnMwjlG.png")
+                        .setImage("https://i.imgur.com/9kd0cCd.png")
                     Savewarn()
                 }
                 interaction.reply({ embeds: [embedwarn] });
